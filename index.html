@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hemant's personal portfolio - Full Stack Developer" />
+  <meta name="keywords" content="Java, Spring Boot, HTML, CSS, JS, Portfolio" />
+  <meta name="author" content="Hemant Singh" />
+  <title>Hemant Singh | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" role="navigation">
+    <div class="container">
+      <h1 class="logo">Welcome</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <span id="theme-toggle" title="Toggle theme">🌙</span>
+
+      </ul>
+      <div class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <h2>Hello, I'm <span>Hemant</span></h2>
+        <p>A passionate <strong>Web & App Developer</strong> creating high-quality solutions.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about" aria-label="About Me">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I am a Full Stack Developer with expertise in Java, Flutter, and Web Development...</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-label="Projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="images/legal-services_9724982.png" alt="Elegalshala App UI" />
+            <h3><i class="fas fa-gavel"></i> Elegalshala – Mobile App</h3>
+            <p><strong>Role:</strong> Flutter Trainee | <strong>Org:</strong> Elegalshala</p>
+            <p>User-friendly legal Q&A app using Flutter. Focused on UI/UX & chat interface.</p>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="images/process.png" alt="User Management System screenshot" />
+            <h3><i class="fas fa-user-cog"></i> User Management System</h3>
+            <p><strong>Tech:</strong> JSP, Servlet, JDBC, MySQL</p>
+            <p>Backend CRUD system with SQL optimization and security.</p>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <img src="images/elearning.png" alt="E-Learning UI" />
+            <h3><i class="fas fa-graduation-cap"></i> E-Learning Platform</h3>
+            <p><strong>Tech:</strong> HTML, CSS, JS</p>
+            <p>Responsive platform with progress tracking & authentication.</p>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <img src="images/icons8-chatgpt-48.png" alt="ChatGPT Clone UI" />
+            <h3><i class="fas fa-robot"></i> ChatGPT Clone</h3>
+            <p><strong>Tech:</strong> HTML, CSS, JS</p>
+            <p>Interactive UI with theme switching & chat history.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <div class="contact-wrapper">
+            <form id="contact-form">
+                <div class="form-row">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required />
+                  <input type="email" id="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-row">
+                  <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+              
+          </div>
+        </div>
+      </section>
+      
+      
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hemant Singh. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
